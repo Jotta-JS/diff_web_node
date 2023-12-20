@@ -4,7 +4,7 @@ const bodyParser = require('body-parser')
 //Config
 app.engine('html', require('ejs').renderFile)
     app.set('view engine', 'html') //view engine
-    app.use('./src/public', express.static('public')) //arquivos estáticos
+    app.use('/static', express.static('./src/public')) //arquivos estáticos
     app.set('views', './src/views')
     
     //Body Parser no express
