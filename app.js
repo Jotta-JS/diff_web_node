@@ -11,8 +11,8 @@ app.engine('html', require('ejs').renderFile)
     app.use(bodyParser.urlencoded({extended: false}))
     app.use(bodyParser.json())
 
-app.get('/home', (req, res) => {
-    res.render('./home/index')
+app.get('/', (req, res) => {
+    res.render('./home/home')
 })
 
 app.post('/criarusuario', (req,res) => {

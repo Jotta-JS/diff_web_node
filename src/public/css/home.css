@@ -1,3 +1,41 @@
+@import url('./topbar.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
+    width: auto;
+    height: max-content;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.news-principal{
+    width: 1300px;
+    background-color: green;
+    height: 500px;
+    display: flex;
+    padding: 10px;
+    gap: 60px;
+}
+
+.news-image{
+    flex-grow: 3;
+    height: 100%;
+    width: fit-content;
     background-color: red;
 }
+
+.news-info{
+    flex-grow: 1;
+    max-width: 450px;
+}
+
